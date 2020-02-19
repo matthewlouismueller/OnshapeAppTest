@@ -5,7 +5,7 @@ var OnshapeStrategy = require('passport-onshape').Strategy;
 
 var oauthClientId;
 var oauthClientSecret;
-var callbackUrl = "https://guarded-harbor-96698.herokuapp.com/";
+var callbackUrl = "https://calm-badlands-59911.herokuapp.com/";
 var oauthUrl = 'https://oauth.onshape.com';
 var apiUrl = 'https://cad.onshape.com';
 
