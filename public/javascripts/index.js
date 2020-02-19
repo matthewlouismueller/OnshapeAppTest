@@ -14,7 +14,7 @@
         var ifrm = document.createElement('iframe');
         ifrm.setAttribute('id', 'ifrm'); // assign an id
 
-        //document.body.appendChild(ifrm); // to place at end of document
+        
 
         // to place before another page element
         var el = document.getElementById('marker');
@@ -330,4 +330,7 @@
     function escapeString(string) {
         return string.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
     }
+    document.body.appendChild(ifrm); // to place at end of document
 })();
+
+
