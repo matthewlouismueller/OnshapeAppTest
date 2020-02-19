@@ -10,6 +10,18 @@
         $('#stl-tolerance-modal').bind('click mousedown', function(e) {
             e.stopImmediatePropagation();
         });
+        
+        var ifrm = document.createElement('iframe');
+        ifrm.setAttribute('id', 'ifrm'); // assign an id
+
+        //document.body.appendChild(ifrm); // to place at end of document
+
+        // to place before another page element
+        var el = document.getElementById('marker');
+        el.parentNode.insertBefore(ifrm, el);
+
+        // assign url
+        ifrm.setAttribute('src', 'OnshapeAppTest/public/javascripts/iframetest.html');
 
         $('#stl-tolerance-submit').click(function() {
             deleteModels();
