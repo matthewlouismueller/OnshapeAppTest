@@ -11,17 +11,17 @@
             e.stopImmediatePropagation();
         });
         
-        var ifrm = document.createElement('iframe');
-        ifrm.setAttribute('id', 'ifrm'); // assign an id
+//        var ifrm = document.createElement('iframe');
+//        ifrm.setAttribute('id', 'ifrm'); // assign an id
 
         
 
         // to place before another page element
-        var el = document.getElementById('marker');
-        el.parentNode.insertBefore(ifrm, el);
+//        var el = document.getElementById('marker');
+//        el.parentNode.insertBefore(ifrm, el);
 
         // assign url
-        ifrm.setAttribute('src', 'OnshapeAppTest/public/javascripts/iframetest.html');
+//        ifrm.setAttribute('src', 'OnshapeAppTest/public/javascripts/iframetest.html');
 
         $('#stl-tolerance-submit').click(function() {
             deleteModels();
@@ -330,7 +330,7 @@
     function escapeString(string) {
         return string.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
     }
-    document.body.appendChild(ifrm); // to place at end of document
+//    document.body.appendChild(ifrm); // to place at end of document
 })();
 
 
